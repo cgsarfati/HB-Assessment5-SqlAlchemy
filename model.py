@@ -26,7 +26,7 @@ class Brand(db.Model):
     def __repr__(self):
         """ Provide helpful representation when printed. """
 
-        return """<User brand_id={} name={} founded={} headquarters={}
+        return """<Brand brand_id={} name={} founded={} headquarters={}
         discontinued={}>""".format(self.brand_id, self.name, self.founded,
                                    self.headquarters, self.discontinued)
 
@@ -44,7 +44,7 @@ class Model(db.Model):
     def __repr__(self):
         """ Provide helpful representation when printed. """
 
-        return "<User model_id={} year={} brand_id={} name={}>".format(self.model_id,
+        return "<Model model_id={} year={} brand_id={} name={}>".format(self.model_id,
                self.year, self.brand_id, self.name)
 
     # Define relationship to brand via brand_id
